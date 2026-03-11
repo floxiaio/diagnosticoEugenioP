@@ -5,7 +5,7 @@ export type SlideKey =
   | "vision"
   | "architecture"
   | "phase"
-  | "investment"
+  | "pricing"
   | "next-step";
 
 export type SlideTheme = "neutral" | "risk" | "value";
@@ -105,13 +105,30 @@ export interface PhaseSlideData {
   phases: PhaseStage[];
 }
 
-export interface InvestmentSlideData {
+export interface PricingRow {
+  phase: string;
+  include: string;
+  purchase: string;
+  modular: string;
+}
+
+export interface PricingSlideData {
   eyebrow: string;
   title: string;
-  deliverables: string[];
-  duration: string;
-  investmentLabel: string;
-  investmentAmount: string;
+  subtitle: string;
+  framing: string[];
+  columns: {
+    phase: string;
+    include: string;
+    purchase: string;
+    modular: string;
+  };
+  rows: PricingRow[];
+  modelNotes: {
+    purchase: string;
+    modular: string;
+  };
+  recommendation: string;
   note: string;
 }
 
@@ -135,6 +152,6 @@ export interface DeckData {
   vision: VisionSlideData;
   architecture: ArchitectureSlideData;
   phase: PhaseSlideData;
-  investment: InvestmentSlideData;
+  pricing: PricingSlideData;
   nextStep: NextStepSlideData;
 }

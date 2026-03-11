@@ -19,9 +19,9 @@ import {
 import { SlideCost } from "@/components/deck/slide-cost";
 import { SlideCover } from "@/components/deck/slide-cover";
 import { SlideArchitecture } from "@/components/deck/slide-architecture";
-import { SlideInvestment } from "@/components/deck/slide-investment";
 import { SlideNextStep } from "@/components/deck/slide-next-step";
 import { SlidePhase } from "@/components/deck/slide-phase";
+import { SlidePricing } from "@/components/deck/slide-pricing";
 import { slideVariants } from "@/components/deck/slide-primitives";
 import { SlideUnderstanding } from "@/components/deck/slide-understanding";
 import { SlideVision } from "@/components/deck/slide-vision";
@@ -37,7 +37,7 @@ const slideRegistry: Record<SlideKey, ComponentType> = {
   vision: SlideVision,
   architecture: SlideArchitecture,
   phase: SlidePhase,
-  investment: SlideInvestment,
+  pricing: SlidePricing,
   "next-step": SlideNextStep,
 };
 

@@ -47,10 +47,10 @@ export const deckData: DeckData = {
       theme: "value",
     },
     {
-      key: "investment",
+      key: "pricing",
       index: 7,
-      label: "Inversión",
-      kicker: "Tiempo e inversión",
+      label: "Propuesta",
+      kicker: "Opciones de arranque",
       theme: "neutral",
     },
     {
@@ -330,24 +330,51 @@ export const deckData: DeckData = {
       },
     ],
   },
-  investment: {
-    eyebrow: "Alcance e inversión",
-    title: "Qué incluye esta Fase 1",
-    deliverables: [
-      "sesión de aterrizaje y priorización",
-      "mapeo de fuentes actuales prioritarias",
-      "diseño del Mission Board",
-      "estructura base de proyectos",
-      "flujo de minutas y tareas",
-      "inbox de pendientes",
-      "alertas iniciales",
-      "primera versión funcional del sistema",
+  pricing: {
+    eyebrow: "Propuesta económica",
+    title: "Opciones de arranque por fases",
+    subtitle:
+      "El sistema puede construirse por fases, y cada fase puede contratarse bajo dos esquemas: compra o modalidad modular.",
+    framing: [
+      "el sistema se construye en 3 fases",
+      "cada fase puede arrancarse de forma independiente",
+      "existen dos modelos: compra y modular",
+      "la decisión de hoy puede ser solo arrancar por la Fase 1",
     ],
-    duration: "3 a 5 semanas",
-    investmentLabel: "Inversión Fase 1",
-    investmentAmount: "MXN $118,000 + IVA",
-    note:
-      "Esta fase deja correctamente puesta la base para la evolución posterior del sistema.",
+    columns: {
+      phase: "Fase",
+      include: "Qué incluye",
+      purchase: "Compra",
+      modular: "Modular (setup + renta)",
+    },
+    rows: [
+      {
+        phase: "Fase 1",
+        include: "Mission Board ejecutivo + capa inicial de control",
+        purchase: "$375,000 MXN",
+        modular: "$56,000 MXN + $3,500 MXN",
+      },
+      {
+        phase: "Fase 2",
+        include:
+          "Seguimiento vivo de minutas, tareas y continuidad operativa",
+        purchase: "$140,000 MXN",
+        modular: "$21,000 MXN + $1,600 MXN",
+      },
+      {
+        phase: "Fase 3",
+        include: "CRM y capa comercial / ventas",
+        purchase: "$170,000 MXN",
+        modular: "$25,000 MXN + $1,800 MXN",
+      },
+    ],
+    modelNotes: {
+      purchase: "Mayor propiedad e independencia a largo plazo.",
+      modular: "Menor inversión inicial y arranque más ágil por fases.",
+    },
+    recommendation:
+      "Si el objetivo es arrancar más rápido, validar adopción y empezar a capturar valor sin sobredimensionar la decisión inicial, recomendamos iniciar por la Fase 1 en modalidad modular.",
+    note: "Los precios no incluyen IVA",
   },
   nextStep: {
     eyebrow: "Cierre sugerido",
