@@ -18,9 +18,8 @@ export default function HomePage() {
               Deck ejecutivo listo para follow-up comercial.
             </h1>
             <p className="max-w-2xl text-lg leading-8 text-slate-300 sm:text-xl">
-              Presentación web premium, diseñada para demostrar entendimiento
-              operativo, hacer visible el costo actual y cerrar una Fase 1 con
-              lógica consultiva.
+              Presentacion web premium, con el diagnóstico inicial para Eugenio
+              Pérez Rivero.
             </p>
           </div>
           <div className="flex flex-wrap items-center gap-4">
