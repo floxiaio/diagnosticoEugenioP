@@ -87,7 +87,7 @@ export function SlideSurface({
   return (
     <div
       className={cn(
-        "mx-auto flex h-full w-full max-w-[90rem] flex-col px-6 py-6 sm:px-10 lg:px-16 xl:pr-28",
+        "mx-auto flex h-full w-full max-w-[88rem] flex-col px-6 py-6 sm:px-10 lg:px-14 xl:px-16 2xl:pr-28",
         className
       )}
     >
@@ -101,12 +101,12 @@ export function SlideSurface({
           <Badge variant={badgeVariantMap[accent]}>{eyebrow}</Badge>
           <div className="max-w-5xl space-y-4">
             {title ? (
-              <h2 className="text-balance text-4xl font-semibold tracking-[-0.055em] text-white sm:text-5xl lg:text-[4.25rem] lg:leading-[0.96]">
+              <h2 className="text-balance text-4xl font-semibold tracking-[-0.05em] text-white sm:text-[3.65rem] sm:leading-[0.98] lg:text-[3.85rem] lg:leading-[0.97]">
                 {title}
               </h2>
             ) : null}
             {description ? (
-              <p className="max-w-4xl text-base leading-7 text-slate-300 sm:text-lg sm:leading-8">
+              <p className="max-w-4xl text-base leading-7 text-slate-300 sm:text-[1.02rem] sm:leading-[1.85] lg:text-[1.08rem]">
                 {description}
               </p>
             ) : null}

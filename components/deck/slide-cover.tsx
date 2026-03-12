@@ -27,7 +27,7 @@ export function SlideCover() {
         </motion.div>
 
         <div className="relative flex flex-1 flex-col justify-center">
-          <motion.div variants={riseIn} className="max-w-[70rem] space-y-10">
+          <motion.div variants={riseIn} className="max-w-[66rem] space-y-9">
             <div className="flex flex-wrap items-center gap-2.5">
               <div className="font-mono text-[10px] uppercase tracking-[0.34em] text-slate-500">
                 FLOXIA / MISSION AUDIT
@@ -37,11 +37,11 @@ export function SlideCover() {
               </div>
             </div>
 
-            <div className="space-y-8">
-              <h1 className="max-w-[58rem] text-balance text-[3.25rem] font-semibold tracking-[-0.078em] text-white sm:text-[4.45rem] lg:text-[5.65rem] lg:leading-[0.95]">
+            <div className="space-y-7">
+              <h1 className="max-w-[52rem] text-balance text-[3.05rem] font-semibold tracking-[-0.07em] text-white sm:text-[4rem] sm:leading-[0.96] lg:text-[4.85rem] lg:leading-[0.95]">
                 {cover.title}
               </h1>
-              <p className="max-w-[56rem] text-balance text-lg leading-8 text-slate-300 sm:text-[1.15rem] sm:leading-8 lg:text-[1.34rem] lg:leading-[1.7]">
+              <p className="max-w-[50rem] text-balance text-[1.02rem] leading-8 text-slate-300 sm:text-[1.08rem] sm:leading-[1.9] lg:text-[1.2rem] lg:leading-[1.75]">
                 Diagnóstico ejecutivo y roadmap propuesto
                 <br />
                 para reducir fricción operativa, recuperar tiempo directivo
@@ -54,7 +54,7 @@ export function SlideCover() {
 
         <motion.div
           variants={riseIn}
-          className="relative mt-16 border-t border-white/[0.06] pt-5"
+          className="relative mt-14 border-t border-white/[0.06] pt-5"
         >
           <div className="flex flex-col gap-3 text-slate-300 md:flex-row md:items-center md:gap-8">
             {cover.callouts.map((callout, index) => (

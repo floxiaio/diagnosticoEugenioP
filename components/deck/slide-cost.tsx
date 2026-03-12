@@ -18,28 +18,28 @@ export function SlideCost() {
         variants={staggerParent}
         initial="hidden"
         animate="show"
-        className="flex flex-1 flex-col gap-6"
+        className="flex flex-1 flex-col gap-5"
       >
-        <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-4">
+        <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
           {cost.blocks.map((block, index) => (
             <motion.div key={block.title} variants={riseIn}>
               <Card className="h-full rounded-[1.9rem]">
-                <CardContent className="flex h-full flex-col gap-8 p-7">
+                <CardContent className="flex h-full flex-col gap-5 p-5">
                   <div className="flex items-center justify-between">
-                    <span className="text-[1.8rem] font-semibold tracking-[-0.06em] text-white">
+                    <span className="text-[1.55rem] font-semibold tracking-[-0.05em] text-white">
                       {block.title}
                     </span>
                     <span className="font-mono text-xs uppercase tracking-[0.28em] text-amber-100/70">
                       0{index + 1}
                     </span>
                   </div>
-                  <p className="text-lg font-medium leading-7 tracking-[-0.03em] text-slate-100">
+                  <p className="text-[1.02rem] font-medium leading-6 tracking-[-0.03em] text-slate-100">
                     {block.kicker}
                   </p>
-                  <p className="text-sm leading-6 text-slate-200">
+                  <p className="text-[0.92rem] leading-5.5 text-slate-200">
                     {block.summary}
                   </p>
-                  <p className="text-base leading-7 text-slate-300">
+                  <p className="text-[0.98rem] leading-6 text-slate-300">
                     {block.detail}
                   </p>
                 </CardContent>
@@ -50,9 +50,9 @@ export function SlideCost() {
 
         <motion.div
           variants={riseIn}
-          className="mt-auto rounded-[2rem] border border-amber-300/16 bg-[linear-gradient(180deg,rgba(245,158,11,0.08),rgba(255,255,255,0.03))] p-8"
+          className="mt-auto rounded-[1.85rem] border border-amber-300/16 bg-[linear-gradient(180deg,rgba(245,158,11,0.08),rgba(255,255,255,0.03))] px-6 py-5"
         >
-          <p className="max-w-5xl text-2xl font-semibold tracking-[-0.04em] text-white sm:text-3xl lg:text-[2rem]">
+          <p className="max-w-5xl text-[1.45rem] font-semibold leading-[1.32] tracking-[-0.04em] text-white sm:text-[1.58rem] lg:text-[1.72rem]">
             {cost.highlightedStatement}
           </p>
         </motion.div>

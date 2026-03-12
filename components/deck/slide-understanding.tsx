@@ -25,26 +25,26 @@ export function SlideUnderstanding() {
         variants={staggerParent}
         initial="hidden"
         animate="show"
-        className="flex flex-1 flex-col gap-6"
+        className="flex flex-1 flex-col gap-5"
       >
-        <div className="grid gap-5 lg:grid-cols-2">
+        <div className="grid gap-4 lg:grid-cols-2">
           {understanding.blocks.map((block) => (
             <motion.div key={block.title} variants={riseIn}>
               <Card className="h-full rounded-[1.9rem]">
-                <CardHeader className="gap-5 p-7">
+                <CardHeader className="gap-4 p-5">
                   <div
-                    className={`h-1.5 w-14 rounded-full bg-gradient-to-r ${accentClassMap[block.accent]}`}
+                    className={`h-1.5 w-12 rounded-full bg-gradient-to-r ${accentClassMap[block.accent]}`}
                   />
-                  <CardTitle className="text-2xl text-white">
+                  <CardTitle className="text-[1.45rem] leading-[1.08] tracking-[-0.04em] text-white">
                     {block.title}
                   </CardTitle>
-                  <div className="space-y-3">
+                  <div className="space-y-2.5">
                     {block.items.map((item) => (
                       <CardDescription
                         key={item}
-                        className="flex items-start gap-3 text-base leading-7 text-slate-300"
+                        className="flex items-start gap-2.5 text-[0.98rem] leading-6 text-slate-300"
                       >
-                        <Check className="mt-1 size-4 shrink-0 text-slate-500" />
+                        <Check className="mt-1 size-3.5 shrink-0 text-slate-500" />
                         <span>{item}</span>
                       </CardDescription>
                     ))}
@@ -57,9 +57,9 @@ export function SlideUnderstanding() {
 
         <motion.div
           variants={riseIn}
-          className="surface-glow mt-auto rounded-[2rem] border border-white/10 bg-white/[0.045] p-8"
+          className="surface-glow mt-auto rounded-[1.85rem] border border-white/10 bg-white/[0.045] px-6 py-5"
         >
-          <p className="max-w-4xl text-2xl font-semibold tracking-[-0.04em] text-white sm:text-3xl lg:text-[2rem]">
+          <p className="max-w-4xl text-[1.45rem] font-semibold leading-[1.3] tracking-[-0.04em] text-white sm:text-[1.6rem] lg:text-[1.72rem]">
             {understanding.highlightedStatement}
           </p>
         </motion.div>
